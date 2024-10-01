@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
-func increment(x int) {
+func increment(x int) int {
 	x++
+	return x
 }
 func main() {
 	x := 5
-	increment(x)
+	fmt.Println(x)
+	fmt.Println(increment(x))
 	fmt.Println(x)
 }
 
