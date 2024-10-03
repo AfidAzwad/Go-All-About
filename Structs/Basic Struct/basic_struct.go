@@ -40,3 +40,5 @@ func main() {
 	fmt.Println(myCar)
 	fmt.Println(canCarBuild(myCar))
 }
+
+// Go has no concept of classes or inheritance. Instead, Go uses structs to define data structures.
