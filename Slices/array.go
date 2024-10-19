@@ -9,7 +9,7 @@ func main() {
 	sliceOfArr := arr[1:4] // 1 to 3
 	fmt.Println("Slice of Array : ", sliceOfArr)
 
-	arrFixed := [5]int{1, 2, 3, 4, 5}
+	arrFixed := [5]int{1, 2, 3, 4}
 	fmt.Println("Fixed Array : ", arrFixed)
 
 	slicedArr := make([]int, 3, 5) // Length: 3, Capacity: 5
