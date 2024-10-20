@@ -21,8 +21,10 @@ func main() {
 	slicedArr = append(slicedArr, 5, 6, 7)
 	fmt.Println("Appended Sliced Array:", slicedArr)
 	fmt.Println("Appended Sliced Array Length:", len(slicedArr))
-	fmt.Println("Appended Sliced Array Capacity:", cap(slicedArr))
+	fmt.Println("Appended Sliced Array Capacity:", cap(slicedArr)) // 10
 }
+
+// When the slice exceeds its capacity, Go automatically doubles the capacity (with some adjustments) to accommodate the new elements.
 
 /* make([]int, 3, 5):
 
