@@ -5,21 +5,23 @@ import "fmt"
 func main() {
 
 	//////// Example 1
-
+	fmt.Println("\n---------a---------:")
 	a := make([]int, 3)
-	fmt.Println("Length of a :", len(a))
-	fmt.Println("Capacity of a:", cap(a))
+	fmt.Println("Length of a :", len(a))  // 3
+	fmt.Println("Capacity of a:", cap(a)) // 3
 	fmt.Println("Address of a:", &a[0])
 
+	fmt.Println("\n---------b---------:")
 	b := append(a, 4)
 	fmt.Println("Length of b:", len(b))
 	fmt.Println("Capacity of b:", cap(b)) // 6 cause Go internally allocates a new array with a larger capacity to hold both the original elements of a and the new element.
-	fmt.Println("Address of a:", &b[0])
+	fmt.Println("Address of b:", &b[0])
 
+	fmt.Println("\n---------c---------:")
 	c := append(a, 5)
 	fmt.Println("Length of c:", len(c))
 	fmt.Println("Capacity of c:", cap(c)) // 6 cause Go internally allocates a new array with a larger capacity to hold both the original elements of a and the new element.
-	fmt.Println("Address of a:", &c[0])
+	fmt.Println("Address of c:", &c[0])
 
 	fmt.Println("a : ", a)
 	fmt.Println("b : ", b)
@@ -31,17 +33,23 @@ func main() {
 	*/
 
 	//////// Example 2
+	fmt.Println("\nExample 2:---")
+
+	fmt.Println("\n---------d---------:")
 
 	d := make([]int, 3, 8)
-	fmt.Println("Length of a :", len(d))
-	fmt.Println("Capacity of a:", cap(d))
-	fmt.Println("Address of a:", &d[0])
+	fmt.Println("Length of d :", len(d))
+	fmt.Println("Capacity of d:", cap(d))
+	fmt.Println("Address of d:", &d[0])
+
+	fmt.Println("\n---------e---------:")
 
 	e := append(d, 4)
 	fmt.Println("Length of e:", len(e))
 	fmt.Println("Capacity of e:", cap(e))
 	fmt.Println("Address of e:", &e[0])
 
+	fmt.Println("\n---------f---------:")
 	f := append(d, 5)
 	fmt.Println("Length of f:", len(f))
 	fmt.Println("Capacity of f:", cap(f))
