@@ -10,3 +10,4 @@ func main() {
 }
 
 // map in Go can be used as Hash Table
+// Looking up a value in a map by its key is much faster than searching through a slice.
